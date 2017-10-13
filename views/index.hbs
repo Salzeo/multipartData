@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Image App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <form action="/users" method="post" class="column" enctype="multipart/form-data">
+        	<input type="text" placeholder="Name" name="name">
+        	<input type="text" placeholder="Email" name="email">
+        	<input type="file" name="image">
+        	<button type="submit">Submit</button>
+        </form>
+
+        {{#each users}}
+            <div class="user">
+                <img src="profiles/{{profile_image}}">
+                <h3>{{username}}</h3>
+                <p>{{email}}</p>
+            </div>
+        {{/each}}
+    </body>
+</html>

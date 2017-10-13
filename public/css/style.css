@@ -1,0 +1,19 @@
+.row, .column {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+form {
+	width: 350px;
+	border: 1px solid #eee;
+	padding: 5px;
+}
+
+form input, form button {
+	padding: 7px;
+	margin-bottom: 5px;
+	outline: none;
+}
